@@ -1,11 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E.Eletro</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!--Início dos ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <h1>ola mundo </h1>
+    <header class="inicio">
+        <div class="logo">
+            <img src="imagens/logo eletro.png" alt="Logo da Empresa">
+        </div>
+        <div class="search-bar">
+            <form class="search-form" onsubmit="searchProducts(event)">
+                <input type="search" id="search-input" placeholder="Buscar produtos, marcas e muito mais...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <!-- INICIO DO MENU-->
+        <nav class="menu-site">
+            <a href="index.html">Início</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="serviço.html">Serviços</a>
+            <a href="blog.html">Blog</a>
+            <a href="contatos.html">Fale Conosco</a>
+
+        </nav>
+        <!-- FIM DO MENU DO SITE -->
+
+        <!-- INICIO DOS ICONIS -->
+        <div class="icons">
+
+            <div id="menu"class="fas fa-bars"></div>
+        </div>
+
+        <!-- FIM DOS ICONES -->
+    </header>
+   <section>
+        <div class="template">
+            <div class="fotos">
+                <div class="img">
+                    <img  src="imagens/logo king.jpg" alt="imagem de ar condicionado">
+                </div>
+                <div class="descricao">
+                    <h3>Ar condicionado</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                    
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="fotos">
+                <div class="img">
+                    <img src="imagens/17565_Black_large_01.jpg" alt="imagem de liquidificador">
+                </div>
+                <div class="descricao">
+                    <h3>Liquidificador</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                  
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="fotos">
+                <div class="img">
+                    <img id="produto" src="imagens/HAMILTONBEACH-52400BZ127_1.jpg" alt="imagem de geladeira">
+                </div>
+                <div class="descricao">
+                    <h3>Geladeira</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="fotos">
+                <div class="img">
+                    <img id="produto" src="imagens/air-fryer.jpeg" alt="imagem de air-fryer">
+                </div>
+                <div class="descricao">
+                    <h3>Air-Fryer</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                    
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+                
+            </div>
+            <div class="fotos">
+                <div class="img">
+                    <img id="produto" src="imagens/fogao.jpg" alt="imagem de fogão">
+                </div>
+                <div class="descricao">
+                    <h3>Fogão</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                   
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="fotos">
+                <div class="img">
+                    <img id="produto" src="imagens/maquina-de-lavar-roupa.jpg" alt="imagem de máquina de lavar roupas">
+                </div>
+                <div class="descricao">
+                    <h3>Máquina de Lavar Roupas</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                    
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="fotos">
+                <div class="img">
+                    <img id="produto" src="imagens/microondas.jpg" alt="imagem de microondas">
+                </div>
+                <div class="descricao">
+                    <h3>Microondas</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="fotos">
+                <div class="img">
+                    <img id="produto" src="imagens/ventilador.jpeg" alt="imagem de ventlador">
+                </div>
+                <div class="descricao">
+                    <h3>Ventilador</h3>
+                    <p>R$ 989,90 (à vista) ou </p>
+                    <p>R$ 119,90 a prazo no cartão</p>
+                   
+                </div>
+                <div class="icons">
+                    <ion-icon id="icone-main" name="cart-outline"></ion-icon>
+                    <ion-icon id="icone-main" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+        
+    
 </body>
+<script src="lo.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
